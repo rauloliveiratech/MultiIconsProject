@@ -1,0 +1,117 @@
+/* Estilos para os botões sociais */
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa-brands,
+.social-btns .btn .fa-solid {
+    /* Efeito de transição para os botões */
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-btns .btn:before {
+    /* Posicionamento do efeito antes do botão */
+    top: 90%;
+    left: -110%;
+}
+
+.social-btns .btn .fa-brands,
+.social-btns .btn .fa-solid {
+    /* Escala do ícone */
+    transform: scale(0.8);
+}
+
+/* Estilos específicos para o botão LinkedIn */
+.social-btns .btn.linkedin:before {
+    /* Cor de fundo do botão LinkedIn */
+    background-color: #0077B5;
+}
+
+.social-btns .btn.linkedin .fa-brands {
+    /* Cor do ícone do LinkedIn */
+    color: #0077B5;
+}
+
+/* Estilos específicos para o botão GitHub */
+.social-btns .btn.github:before {
+    /* Cor de fundo do botão GitHub */
+    background-color: #333;
+}
+
+.social-btns .btn.github .fa-brands {
+    /* Cor do ícone do GitHub */
+    color: #333;
+}
+
+/* Estilos específicos para o botão Google Email */
+.social-btns .btn.google-email:before {
+    /* Cor de fundo do botão Google Email */
+    background-color: #DC4A38;
+}
+
+.social-btns .btn.google-email .fa-solid {
+    /* Cor do ícone do Google Email */
+    color: #DC4A38;
+}
+
+/* Estilos de foco/hover para todos os botões */
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+    /* Posicionamento do efeito de foco/hover */
+    top: -10%;
+    left: -10%;
+}
+
+.social-btns .btn:focus .fa-brands,
+.social-btns .btn:hover .fa-brands,
+.social-btns .btn:focus .fa-solid,
+.social-btns .btn:hover .fa-solid {
+    /* Cor e escala do ícone durante o foco/hover */
+    color: #fff;
+    transform: scale(1);
+}
+
+/* Estilos gerais para os botões sociais */
+.social-btns {
+    /* Tamanho e posicionamento do container */
+    height: 90px;
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.social-btns .btn {
+    /* Estilos para cada botão individual */
+    display: inline-block;
+    background-color: #fff;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    opacity: 0.99;
+}
+
+.social-btns .btn:before {
+    /* Efeito de rotação antes do botão */
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.social-btns .btn .fa-brands,
+.social-btns .btn .fa-solid {
+    /* Tamanho e alinhamento do ícone */
+    font-size: 38px;
+    vertical-align: middle;
+}
